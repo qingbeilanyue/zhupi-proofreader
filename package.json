@@ -1,0 +1,39 @@
+{
+  "name": "zhupi-proofreader",
+  "private": true,
+  "version": "0.1.0",
+  "description": "本地优先的 PDF 编校工作台，支持原页标注、校样与修改清单导出。",
+  "license": "MIT",
+  "author": "qingbeilanyue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qingbeilanyue/zhupi-proofreader.git"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:geometry": "node scripts/test-selection-geometry.mjs"
+  },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "exceljs": "^4.4.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.468.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.449",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}
